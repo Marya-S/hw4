@@ -32,6 +32,32 @@ public class Main {
             }
             k += 79;
         }
-
+        System.out.println("*****Задание 4******");
+        for (int l = 1; l<=30; l++){
+            System.out.print(l+":");
+            if(l%3==0 || l%5==0){
+                if(l%3==0 && l%5==0){
+                    System.out.print("ping pong");
+                }
+                else if(l%3==0){
+                    System.out.print("ping");
+                }
+                else {
+                    System.out.print("pong");
+                }
+            }
+            System.out.print("\r\n");
+        }
+        System.out.println("*****Задание 5******");
+        int m =0;
+        int n = 1;
+        System.out.print(m + " ");
+        System.out.print(n + " ");
+        for (int p = 0; p<=7;p++){
+            int newInt = m+n;
+            m = n;
+            n = newInt;
+            System.out.print(newInt + " ");
+        }
     }
 }
